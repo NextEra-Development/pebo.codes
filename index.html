@@ -15,6 +15,79 @@
   <!-- favicon --> <meta property="og:image"  content="">
   <meta property="og:url" content="https://pebo.codes">
 </head>
-  <body>
+ 
 
-</body>
+<!-- Body Section -->
+<body>
+  <!-- Landing Page -->
+  <div id="landing-page" class="flex items-center justify-center">
+    <div class="cursor-pointer flex items-center justify-center text-5xl text-glow font-medium">
+      <span class="mr-4 text-5xl pl-4">&lt;/</span> <span class="mx-4 text-center text-5xl">CLICK ANYWHERE<br>TO ENTER</span>
+    </div><span class="ml-4 text-5xl pr-4">&gt;</span>
+  </div>
+
+  <!-- Main Content Area -->
+  <div id="main-content" class="hidden">
+    <!-- Video Background -->
+    <video id="background-video" playsinline="playsinline" autoplay="autoplay" loop="loop">
+      <source src="" type="video/mp4">
+    </video>
+
+    <!-- Profile Box -->
+    <div class="flex flex-col items-center justify-start h-screen">
+      <div id="main-box" class="profile-box flex flex-col items-center relative rounded-lg pb-3">
+        <!-- Mute and Pause Buttons -->
+        <span id="mute-button" class="video-icon top-4 left-4 fas fa-volume-up glow-white" data-tooltip="Mute"></span>
+        <span id="pause-button" class="video-icon top-4 right-4 pl-2 fas fa-pause glow-white" data-tooltip="Pause"></span>
+
+        <!-- Profile Picture -->
+        <div class="top-1/2 transform -translate-y-1/2">
+          <div class="profile-pic-container w-40 h-40 rounded-full overflow-hidden">
+            <img src="" alt="Profile Picture" class="w-full h-full object-cover" draggable="false">
+          </div>
+        </div>
+
+        <!-- Text Container -->
+        <div class="text-container">
+          <div class="flex flex-col items-center justify-center">
+            <!-- Name Badge Container -->
+            <div class="name-badge-container">
+              <a href="" target="_blank" rel="noopener">
+                <div id="sparkles-container" class="sparkles">
+                  <h1 class="text-white text-5xl font-semibold my-1 text-glow">syntax</h1>
+                </div>
+              </a>
+              <!-- <img id="badge-icon" src="https://cdn.syntax.fo/img/dev-badge.gif" alt="Badge Icon" draggable="false"> -->
+            </div>
+
+            <!-- ID and Discord Tag 
+            <a href="https://lookup.guru/135221346756984832" target="_blank" rel="noopener">
+              <p class="text-gray-400 text-sm italic">135221346756984832</p>
+            </a> -->
+
+            <!-- Typed Text -->
+            <div class="mt-7 flex justify-center h-10">
+              <h2 id="typed-text" class="text-white text-xl"></h2>
+            </div>
+
+            <!-- Banner
+            <a href="https://lookup.guru/135221346756984832" target="_blank" rel="noopener">
+              <div class="mt-3 mb-4 flex justify-center">
+                <img src="https://api.syntax.fo/status" alt="banner" class="w-full h-auto" draggable="false">
+              </div>
+            </a> -->
+
+            <!-- Tooltips -->
+            <div id="tooltip-container">
+              <span id="discord-tool" class="fab fa-discord glow-white" data-tooltip=""></span>
+              <span id="github-tool" class="fab fa-github glow-white" data-tooltip="1337Syntax" data-href=""></span>
+              <span id="telegram-tool" class="fab fa-telegram glow-white" data-tooltip="" data-href=""></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button Container -->
+      <div class="relative flex justify-center mt-4 w-full">
+        <div class="button-container grid grid-cols-2 gap-4">
+      
